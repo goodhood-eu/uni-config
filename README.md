@@ -1,4 +1,4 @@
-easyconfig
+simpleconfig
 ================
 
 Shared config for universal JavaScript apps.
