@@ -1,6 +1,6 @@
 const { assert } = require('chai');
 
-describe('SimpleConfig suite', () => {
+describe('UniConfig suite', () => {
   const config = require('../index');
 
   it('config defaults set', () => {

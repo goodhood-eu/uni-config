@@ -1,4 +1,4 @@
-simpleconfig
+uni-config
 ================
 
 Shared config for universal JavaScript apps.

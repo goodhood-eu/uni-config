@@ -1,13 +1,13 @@
 {
-  "name": "simpleconfig",
+  "name": "uni-config",
   "description": "Shared config for universal JavaScript apps",
   "author": "Nebenan.de <max@nebenan.de>",
 
   "license": "MIT",
   "readmeFilename": "README.md",
 
-  "repository": "good-hood-gmbh/simpleconfig",
-  "bugs": "https://github.com/good-hood-gmbh/simpleconfig/issues",
+  "repository": "good-hood-gmbh/uni-config",
+  "bugs": "https://github.com/good-hood-gmbh/uni-config/issues",
 
   "version": "0.0.1",
 
