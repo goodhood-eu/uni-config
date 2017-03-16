@@ -1,0 +1,42 @@
+{
+  "name": "easyconfig",
+  "description": "Shared config for universal JavaScript apps",
+  "author": "Nebenan.de <max@nebenan.de>",
+
+  "license": "MIT",
+  "readmeFilename": "README.md",
+
+  "repository": "good-hood-gmbh/easy-config",
+  "bugs": "https://github.com/good-hood-gmbh/easy-config/issues",
+
+  "version": "0.0.1",
+
+  "keywords": [
+   "config",
+   "universal",
+   "express",
+   "browserify"
+  ],
+
+  "main": "index.js",
+  "engines": {
+    "node": "^6.x.x"
+  },
+
+  "scripts": {
+    "test": "node test.js"
+  },
+
+  "devDependencies": {
+    "eslint": "3.17.1",
+    "eslint-config-airbnb-base": "11.1.1",
+    "eslint-plugin-import": "2.2.0",
+
+    "mocha": "3.2.0",
+    "chai": "3.5.0"
+  },
+
+  "dependencies": {
+    "lodash.merge": "4.6.0"
+  }
+}
