@@ -30,20 +30,20 @@ All options can be set in process environment:
 
 ## Usage:
 
-```
+```javascript
   const config = require('config');
   // use your config
 ```
 
 For clientside to work with browserify, in package.json add:
-```
+```json
   "browser": {
     "config": "config/client.js"
   }
 ```
 
 And somewhere in your template (pug template as example):
-```
+```jade
   script.
     var __appConfig__=!{JSON.stringify(config)};
 ```
