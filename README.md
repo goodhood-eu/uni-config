@@ -38,7 +38,7 @@ All options can be set in the process environment:
 For clientside to work (with browserify), in package.json add:
 ```json
   "browser": {
-    "config": "config/client.js"
+    "uni-config": "uni-config/client.js"
   }
 ```
 
