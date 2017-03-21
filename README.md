@@ -31,7 +31,7 @@ All options can be set in the process environment:
 ## Usage:
 
 ```javascript
-  const config = require('config');
+  const config = require('uni-config');
   // use your config
 ```
 
