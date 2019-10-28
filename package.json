@@ -6,7 +6,7 @@
   "readmeFilename": "README.md",
   "repository": "good-hood-gmbh/uni-config",
   "bugs": "https://github.com/good-hood-gmbh/uni-config/issues",
-  "version": "2.1.0",
+  "version": "2.0.1",
   "keywords": [
     "config",
     "universal",
@@ -14,21 +14,15 @@
     "browserify"
   ],
   "main": "index.js",
-  "engines": {
-    "node": "^10.x.x"
-  },
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install",
-    "lint": "eslint ./",
-    "prepublishOnly": "npm test && npm run lint && echo \"\\033[0;32mReady to publish\\033[0m\"",
     "test": "node test.js"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^5.10.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "mocha": "^5.2.0"
+    "eslint": "^6.6.0",
+    "eslint-config-nebenan-base": "^1.0.0",
+    "mocha": "^6.2.2"
   },
   "dependencies": {
     "lodash.merge": "^4.6.1"
