@@ -8,7 +8,7 @@ const serialize = require('serialize-javascript');
 
 const { files } = require('../utils');
 
-const modulePath = path.resolve(`${__dirname}/../index`);
+const modulePath = path.resolve(`${__dirname}/../index.js`);
 
 const defaultOptions = { getConfig: (config) => config };
 
@@ -26,11 +26,6 @@ const schema = {
 const getFreshConfig = () => {
   delete require.cache[modulePath];
   files.forEach((key) => { delete require.cache[key]; });
-
-  Object.keys(require.cache).forEach((key) => {
-    if (key.includes('/uni-config')) delete require.cache[key];
-  });
-
   return require(modulePath);
 };
 
