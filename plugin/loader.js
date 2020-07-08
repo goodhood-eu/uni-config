@@ -35,12 +35,12 @@ const pitch = function() {
   const { getConfig } = options;
 
   const clientConfig = getConfig(getFreshConfig());
-  const content = serialize(clientConfig, { isJSON: true });
+  const content = serialize(clientConfig);
 
   this.cacheable(true);
   files.map((filePath) => this.addDependency(filePath));
 
-  return `module.exports = ${content}`;
+  return `module.exports = ${content};`;
 };
 
 module.exports = { pitch };

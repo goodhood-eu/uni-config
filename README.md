@@ -32,7 +32,7 @@ const config = require('uni-config');
 // use your config
 ```
 
-There is a special UniConfigPlugin for Webpack to buildle your client app:
+There is a special UniConfigPlugin for Webpack to bundle config in your client app:
 
 ```javascript
 const UniConfigPlugin = require('uni-config/plugin');
@@ -46,8 +46,8 @@ UniConfigPlugin accepts an options object:
 ```javascript
 const options = {
   // An optional function to filter full config hiding secrets from the client app.
-  // By default entire config object will be accessible to the client app.
-  // It's highly recommended to set this function to filter your full config and to only output
+  // By default entire config object will be accessible to the client.
+  // It's highly recommended to set this function to filter your full config and only output
   // client relevant portions preserving original object structure.
   getConfig: (fullConfig) => {
     const { clientSafePortion } = fullConfig;
