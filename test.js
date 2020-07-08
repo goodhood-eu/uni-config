@@ -8,7 +8,6 @@ const env = {
   ...process.env,
   NODE_ENV: 'customenv',
   CONFIG_DIR: fixturesPath,
-  CONFIG_OVERRIDE_KEY: 'sandboxStuffs',
   SANDBOX: 'true',
 };
 

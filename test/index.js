@@ -19,10 +19,4 @@ describe('UniConfig suite', () => {
   it('env loaded', () => {
     assert.isTrue(config.customEnvLoaded, 'env config set value correctly');
   });
-
-  it('sandbox overrides work', () => {
-    assert.isTrue(config.sandbox, 'forcing sandbox mode works');
-    assert.isUndefined(config.sandboxStuffs, 'removed sandbox overrides prop');
-    assert.equal(config.config, 'sandbox', 'override worked');
-  });
 });
