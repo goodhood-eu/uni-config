@@ -6,7 +6,7 @@ const PLUGIN_NAME = 'UniConfigPlugin';
 const MODULE_LOADER = path.resolve(`${__dirname}/loader.js`);
 const REGEX_MODULE = /uni-config\/index\.js$/;
 
-class I18nModularPlugin {
+class UniConfigPlugin {
   constructor(options) {
     this.options = options;
     debug('initialized plugin with options %O', options);
@@ -28,4 +28,4 @@ class I18nModularPlugin {
   }
 }
 
-module.exports = I18nModularPlugin;
+module.exports = UniConfigPlugin;
