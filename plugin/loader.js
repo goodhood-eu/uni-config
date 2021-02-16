@@ -1,7 +1,5 @@
 const path = require('path');
-
-const { getOptions } = require('loader-utils');
-const validate = require('schema-utils');
+const { validate } = require('schema-utils');
 
 const defaults = require('lodash.defaults');
 const serialize = require('serialize-javascript');
@@ -30,17 +28,17 @@ const getFreshConfig = () => {
 };
 
 const pitch = function() {
-  const options = defaults({}, getOptions(this), defaultOptions);
+  const options = defaults({}, this.getOptions(), defaultOptions);
   validate(schema, options, { name: 'UniConfigPlugin loader' });
   const { getConfig } = options;
 
   const clientConfig = getConfig(getFreshConfig());
   const content = serialize(clientConfig);
 
-  this.cacheable(true);
   files.map((filePath) => this.addDependency(filePath));
+  this.cacheable(true);
 
-  return `module.exports = ${content};`;
+  return `export default ${content};`;
 };
 
 module.exports = { pitch };

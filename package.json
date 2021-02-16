@@ -6,7 +6,7 @@
   "readmeFilename": "README.md",
   "repository": "goodhood-eu/uni-config",
   "bugs": "https://github.com/goodhood-eu/uni-config/issues",
-  "version": "3.0.1",
+  "version": "4.0.0-beta.0",
   "keywords": [
     "config",
     "universal",
@@ -26,17 +26,16 @@
     "test": "node test.js"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-nebenan-base": "^1.3.1",
-    "mocha": "^8.0.1"
+    "chai": "^4.3.0",
+    "eslint": "^7.20.0",
+    "eslint-config-nebenan-base": "^1.6.0",
+    "mocha": "^8.3.0"
   },
   "dependencies": {
     "debug": "^4.1.1",
-    "loader-utils": "^2.0.0",
     "lodash.defaults": "^4.2.0",
     "lodash.merge": "^4.6.2",
-    "schema-utils": "^2.7.0",
-    "serialize-javascript": "^4.0.0"
+    "schema-utils": "^3.0.0",
+    "serialize-javascript": "^5.0.1"
   }
 }

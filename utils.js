@@ -12,12 +12,15 @@ const base = { environment, debug, sandbox };
 logger('building config with %O', base);
 
 const getPath = (name) => path.resolve(`${__dirname}/../../${configDir}/${name}`);
+const filterExists = (filePath) => fs.existsSync(filePath);
 
 const files = [
-  getPath('default.js'),
-  getPath(`${environment}.js`),
-  getPath('local.js'),
-].filter((filePath) => fs.existsSync(filePath));
+  'default.js',
+  `${environment}.js`,
+  'local.js',
+]
+  .map(getPath)
+  .filter(filterExists);
 
 logger('located config files %O', files);
 

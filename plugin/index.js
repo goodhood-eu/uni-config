@@ -13,12 +13,12 @@ class UniConfigPlugin {
   }
 
   apply(compiler) {
-    compiler.hooks.compilation.tap(PLUGIN_NAME, (compilation, { normalModuleFactory }) => {
-      normalModuleFactory.hooks.afterResolve.tap(PLUGIN_NAME, (module) => {
-        if (REGEX_MODULE.test(module.resource)) {
-          debug('injected module loader for %s', module.resource);
+    compiler.hooks.normalModuleFactory.tap(PLUGIN_NAME, (normalModuleFactory) => {
+      normalModuleFactory.hooks.afterResolve.tap(PLUGIN_NAME, ({ createData }) => {
+        if (REGEX_MODULE.test(createData.resource)) {
+          debug('injected module loader for %s', createData.resource);
 
-          module.loaders.push({
+          createData.loaders.push({
             loader: MODULE_LOADER,
             options: this.options,
           });
