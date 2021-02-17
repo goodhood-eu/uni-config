@@ -22,7 +22,6 @@ const schema = {
       type: 'boolean',
     },
   },
-  required: ['getConfig'],
   additionalProperties: false,
 };
 
