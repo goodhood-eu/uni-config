@@ -6,7 +6,7 @@
   "readmeFilename": "README.md",
   "repository": "goodhood-eu/uni-config",
   "bugs": "https://github.com/goodhood-eu/uni-config/issues",
-  "version": "4.0.0-beta.0",
+  "version": "4.0.0",
   "keywords": [
     "config",
     "universal",
