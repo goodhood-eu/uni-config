@@ -45,14 +45,17 @@ plugins: [
 UniConfigPlugin accepts an options object:
 ```javascript
 const options = {
-  // An optional function to filter full config hiding secrets from the client app.
+  // An optional function to filter full config and hide secrets from the client app.
   // By default entire config object will be accessible to the client.
-  // It's highly recommended to set this function to filter your full config and only output
+  // It's highly recommended to pass this function to filter your full config and only output
   // client relevant portions preserving original object structure.
   getConfig: (fullConfig) => {
     const { clientSafePortion } = fullConfig;
     const configWithoutSecrets = { clientSafePortion };
     return configWithoutSecrets;
   },
+  // An optional boolean flag that switches internal loader output
+  // between ES Module (default) and Common JS format
+  esModule: true,
 };
 ```
