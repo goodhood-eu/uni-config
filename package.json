@@ -33,8 +33,7 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "lodash.defaults": "^4.2.0",
-    "lodash.merge": "^4.6.2",
+    "lodash": "^4.17.21",
     "schema-utils": "^4.2.0",
     "serialize-javascript": "^6.0.1"
   }
