@@ -1,10 +1,10 @@
 {
   "name": "uni-config",
   "description": "Shared config for universal JavaScript apps",
-  "author": "Nebenan.de <max@nebenan.de>",
+  "author": "Good Hood GmbH <tech@nebenan.de>",
   "license": "MIT",
-  "readmeFilename": "README.md",
-  "repository": "goodhood-eu/uni-config",
+  "homepage": "https://github.com/goodhood-eu/uni-config#readme",
+  "repository": "github:goodhood-eu/uni-config",
   "bugs": "https://github.com/goodhood-eu/uni-config/issues",
   "version": "4.0.0",
   "keywords": [
