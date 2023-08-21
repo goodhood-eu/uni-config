@@ -1,7 +1,7 @@
 const path = require('path');
 const { validate } = require('schema-utils');
 
-const defaults = require('lodash.defaults');
+const defaults = require('lodash/defaults');
 const serialize = require('serialize-javascript');
 
 const { files } = require('../utils');

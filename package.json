@@ -1,12 +1,12 @@
 {
   "name": "uni-config",
   "description": "Shared config for universal JavaScript apps",
-  "author": "Nebenan.de <max@nebenan.de>",
+  "author": "Good Hood GmbH <tech@nebenan.de>",
   "license": "MIT",
-  "readmeFilename": "README.md",
-  "repository": "goodhood-eu/uni-config",
+  "homepage": "https://github.com/goodhood-eu/uni-config#readme",
+  "repository": "github:goodhood-eu/uni-config",
   "bugs": "https://github.com/goodhood-eu/uni-config/issues",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "keywords": [
     "config",
     "universal",
@@ -21,21 +21,21 @@
   ],
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install",
+    "check": "npm test && npm run lint && echo \"\\033[0;32mReady to publish\\033[0m\"",
     "lint": "eslint ./",
-    "prepublishOnly": "npm test && npm run lint && echo \"\\033[0;32mReady to publish\\033[0m\"",
+    "prepublishOnly": "npm run check",
     "test": "node test.js"
   },
   "devDependencies": {
-    "chai": "^4.3.0",
-    "eslint": "^7.20.0",
-    "eslint-config-nebenan-base": "^1.6.0",
-    "mocha": "^8.3.0"
+    "chai": "^4.3.7",
+    "eslint": "^8.47.0",
+    "eslint-config-nebenan-base": "^2.0.2",
+    "mocha": "^10.2.0"
   },
   "dependencies": {
-    "debug": "^4.1.1",
-    "lodash.defaults": "^4.2.0",
-    "lodash.merge": "^4.6.2",
-    "schema-utils": "^3.0.0",
-    "serialize-javascript": "^5.0.1"
+    "debug": "^4.3.4",
+    "lodash": "^4.17.21",
+    "schema-utils": "^4.2.0",
+    "serialize-javascript": "^6.0.1"
   }
 }
