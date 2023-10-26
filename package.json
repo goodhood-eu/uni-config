@@ -6,7 +6,7 @@
   "homepage": "https://github.com/goodhood-eu/uni-config#readme",
   "repository": "github:goodhood-eu/uni-config",
   "bugs": "https://github.com/goodhood-eu/uni-config/issues",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "keywords": [
     "config",
     "universal",
@@ -27,9 +27,9 @@
     "test": "node test.js"
   },
   "devDependencies": {
-    "chai": "^4.3.7",
-    "eslint": "^8.47.0",
-    "eslint-config-nebenan-base": "^2.0.2",
+    "chai": "^4.3.10",
+    "eslint": "^8.52.0",
+    "eslint-config-nebenan-base": "^2.0.3",
     "mocha": "^10.2.0"
   },
   "dependencies": {
